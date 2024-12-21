@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>details of employee</title>
+    </head>
+    <body>
+        {% load static %}
+        <div class="card_header">
+            <h1 class="fw-bold">details of an employee</h1>
+        </div>
+        <table class="table table-bordered table-striped">
+            {% load static %}
+                <tr>
+                    <th>name</th>
+                    <th>father_name</th>
+                    <th>hometown</th>
+                    <th>address</th>
+                    <th>dob</th>
+                    <th>contact_no</th>
+                    
+                    <th>year1</th>
+                    <th>percentage1</th>
+                   
+                    <th>year2</th>
+                    <th>percentage2</th>
+                   
+                    <th>year3</th>
+                    <th>percentage3</th>
+                   
+                    <th>year4</th>
+                    <th>percentage4</th>
+                    
+                    <th>company_name</th>
+                    <th>start</th>
+                    <th>end</th>
+                    <th>reason</th>
+                    <th>reference</th>
+                    <th>reference_no</th>
+                    <th>emailid</th>
+
+                    <th>adhaarcard</th>
+                    <th>pancard</th>
+                    
+
+                </tr>
+                {% for i in Employee2%}
+                <tr>
+                    <td>{{i.name}}</td>
+                    <td>{{i.father_name}}</td>
+                    <td>{{i.hometown}}</td>
+                    <td>{{i.address}}</td>
+                    <td>{{i.dob}}</td>
+                    <td>{{i.contact_no}}</td>
+                    <td>{{i.year1}}</td>
+                    <td>{{i.percentage1}}</td>
+                    <td>{{i.year2}}</td>
+                    <td>{{i.percentage2}}</td>
+                    <td>{{i.year3}}</td>
+                    <td>{{i.percentage3}}</td>
+                    <td>{{i.year4}}</td>
+                    <td>{{i.percentage4}}</td>
+                    <td>{{i.company_name}}</td>
+                    <td>{{i.start}}</td>
+                    <td>{{i.end}}</td>
+                    <td>{{i.reason}}</td>
+                    <td>{{i.reference}}</td>
+                    <td>{{i.reference_no}}</td>
+                    <td>{{i.emailid}}</td>
+
+
+                    
+                    {% if i.adhaarcard %}
+                        <td>
+                            <img src="{{ i.adhaarcard.url }}" alt="" class="prod-size">
+                        </td>
+                    {% else %}
+                        <td>
+                            <img src="{% static 'images/Employee2.png' %}" alt="Employee2" class="prod-size">
+                        </td>
+                    {% endif %}
+
+                    {% if i.pancard %}
+                    <td>
+                        <img src="{{ i.pancard.url }}" alt="" class="prod-size">
+                    </td>
+                    {% else %}
+                    <td>
+                        <img src="{% static 'images/Employee2.png' %}" alt="Employee2" class="prod-size">
+                    </td>
+                    {% endif %}
+
+
+                   
+
+
+
+
+
+                </tr>
+                {% endfor %}
+                    
+        </div>
+    </body>
+</html>

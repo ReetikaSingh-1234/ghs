@@ -1,0 +1,78 @@
+{% load static %}
+{% csrf_token %}
+<html>
+    <head>
+        <title>adminlogin</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: url('bg.png');
+                background-size: 70%70%;
+            }
+            button{
+                background-color: rgb(116, 191, 245);
+                width: 25%;
+                padding: 15px;
+                color: black;
+                border: none;
+                float: center;
+                font-size: 15px;
+            }
+            label{
+                font-size: 20px;
+            }
+            
+            input[type=email],input[type=password]{
+                width: 50%;
+                font-size: 15px;
+                margin: 8px 0px;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 2px solid rgb(116, 191, 245);
+                box-sizing: border-box;
+            }
+            button:hover{
+                opacity:0.7;
+
+            }
+            .container{width:85%;
+                border-radius: 20px;
+                padding:40px;
+                height:300px;
+                background-color: white;
+                
+            }
+            .imgcontainer { margin-left:100px;
+               float:left;
+                
+            }
+              
+            img.avatar {
+                width: 20%;
+                border-radius: 50%;
+            }  
+        </style>
+    </head>
+    <body><br>
+        <center><h1 style="color:rgb(141, 199, 241);font-size:60px;">Employee Login</h1></center>
+        
+            <img src= "{% static 'login.png' %}" style="height: 500px;width:50%;margin-left:50px;" >
+        
+        <form action="#" method="post"style="float:right; margin-right:150px;padding:50px;">
+           
+            {% csrf_token %} 
+            <div class="container">
+               
+                <label for ='email'><b>UserEmail :  </b></label>
+                <input type="email" placeholder="Enter email" name="email" float="right"  required><br> <br> 
+                <label for='password'><b>Password :&nbsp; </b></label>
+                <input type="password" placeholder="Enter Password" name="password" required><br><br>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="submit" ><b><a href="http://localhost:8000/show">Login</a></b></button><br>
+                <br>
+                
+                
+            </div>
+        </form>
+    </body>
+</html>

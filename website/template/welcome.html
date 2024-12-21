@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title>Employee Details</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #2B2D63;
+            }
+            button{
+                background-color:rgb(116, 191, 245);
+                width: 25%;
+                padding: 15px;
+                color: black;
+                border: none;
+                float: center;
+                font-size: 15px;
+            }
+            label{
+                font-size: 20px;
+            }
+            form{
+               
+            }
+            input[type=email],input[type=text],input[type=date],input[type=file],input[type=number]{
+                width: 50%;
+                font-size: 15px;
+                margin: 8px 0px;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 2px solid rgb(116, 191, 245);
+                box-sizing: border-box;
+            }
+            input[type=radio]{
+                height: 18px;
+                width: 18px;
+            }
+            button:hover{
+                opacity:0.7;
+
+            }
+            .container{width:60%;
+                border-radius: 20px;
+                padding:40px;
+                height: 1500px;
+            margin-left:250px;
+                background-size: 100% 100%;
+                background-image: url(image.png);
+            }
+            .imgcontainer {
+               
+                
+            }
+              
+            
+        </style>
+    </head>
+    <body>
+        <br>
+
+       
+        <center><h1 style="color:rgb(116, 191, 245);">Employee Details</h1></center>
+        
+     
+        <form action="#" method="post">
+           
+            <div class="container">
+                <div class="per">
+                    <center> <h1 style="color:#2B2D63;">Personal Details</h1></center>
+                 
+                 <div class="n" style="float:left;">
+                    
+                <label for='Name'><b>Employee Name: </b></label>
+		        <input type='text' placeholder="Enter your first name" name='name' required>
+                 <br>
+                <br>
+		        <label for='Father_name'><b> Father's Name:&nbsp;&nbsp;&nbsp;</b></label>
+               
+		        <input type='text' placeholder='Enter your father name' name='father_name' required>
+                <br><br>
+		        <label for='hometown' ><b>HomeTown: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+		        <input type='text' placeholder="Enter your hometown" name='hometown' required><br>
+                <br>
+            	<label for ='current address'><b>Current Address: </b></label>
+            	<input type="text" placeholder="Enter current address" name="address" float="right"  required>
+                </div> 
+                <div class="e" style="float:right; ">
+                <label for='dob'><b>Date Of Birth: </b></label>
+                    <input type="date" placeholder="dob" name="dob" required><br>  <br>
+                 
+            	<label for='contactno.'><b>Contact No. : &nbsp;</b></label>
+            	<input type="text" placeholder="Enter contact no." name="contact_no" required><br>  <br>
+                <label for='adhaarcard'><b>Adhaar Card:&nbsp;&nbsp;</b></label>
+            	<input type="file"  accept="image/png, image/gif, image/jpeg" placeholder="Enter adhaarcard" name="adhaarcard" required><br>  <br>
+                <label for='pancard'><b>Pan Card:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></label>
+            	<input type="file"accept="image/png, image/gif, image/jpeg"  placeholder="Pancard" name="pancard" required>
+                </div></div><br>  <br>
+                <br>
+                <div class="ex" style="padding-top:250px; width:900px; ">
+                <center><h1 style="color:#2B2D63; width:700px">Education Details</h1></center>
+                <div class="n" style="float:left;">
+                <label for='high school'><b>High School:</b></label><br>
+                <label for='year1'><b>Year: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            	<input type="number" min="1900" max="2099" step="1" value="2016" placeholder="year1" name="year1" required><br>  <br>
+                <label for='percentage1'><b>Percentage:</b></label>
+            	<input type="text" placeholder="percentage1" name="percentage1" required><br>  <br>
+                <label for='pdf1'><b>Marksheet:&nbsp;&nbsp;<b></b></label>
+            	<input type="file"  accept="application/pdf,application/vnd.ms-excel"placeholder="pdf1" name="pdf1" required><br>  <br>
+                
+               
+                <label for='intermediate'><b>Intermediate:</b></label><br>
+                <label for='year2'><b>Year: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                
+            	<input type="number" min="1900" max="2099" step="1" value="2016" placeholder="year2" name="year2" required><br>  <br>
+                <label for='percentage2'><b>Percentage:</b></label>
+            	<input type="text" placeholder="percentage2" name="percentage2" required><br>  <br>
+                <label for='pdf2'><b>Marksheet:&nbsp;&nbsp;</b></label>
+            	<input type="file" placeholder="pdf2" name="pdf2"  accept="application/pdf,application/vnd.ms-excel"required><br>  <br>
+            	</div>
+                <div class="n" style="float:right;">
+                <label for='graduate'><b>Graduate:</b></label><br>
+            	<label for='year3'><b>Year: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            	<input type="number" min="1900" max="2099" step="1" value="2016" placeholder="year3" name="year3" required><br>  <br>
+                <label for='percentage3'><b>Percentage:</b></label>
+            	<input type="text" placeholder="percentage3" name="percentage3" required><br>  <br>
+                <label for='pdf3'><b>Marksheet:&nbsp;&nbsp;</b></label>
+            	<input type="file" accept="application/pdf,application/vnd.ms-excel" placeholder="pdf3" name="pdf3" required><br>  <br>
+                <label for='post graduate'><b>
+                    Post Graduate: </b></label><br>
+                    <label for='year4'><b>Year: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                    <input type="number" min="1900" max="2099" step="1" value="2016" placeholder="year4" name="year4" required><br>  <br>
+                    <label for='percentage4'><b>Percentage:</b></label>
+                    <input type="text" placeholder="percentage4" name="percentage4" required><br>  <br>
+                    <label for='pdf4'><b>Marksheet:&nbsp;&nbsp;</b></label>
+            	<input type="file" placeholder="pdf4" name="pdf4" accept="application/pdf,application/vnd.ms-excel" required><br>  <br>
+            	</div>
+            </div>
+                <div class="p" style="padding-top:350px; width:900px;">
+                <center><h1 style="color:#2B2D63; width:700px;">Past Experience</h1></center>
+                
+                <div class="c" style="float:left;">
+                <label for='company name'><b>Company Name:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</b></label>
+                <input type="text" placeholder="company name" name="company_name" required><br>  <br>
+                <label for='start date'><b>Start Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                    <input type="date" placeholder="start" name="start" required><br>  <br>
+                    <label for='end'><b>End Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                    <input type="date" placeholder="end" name="end" required><br>  <br>
+                <label for='reason'><b>Reason For Change:</b></label>
+                <input type="text" placeholder="reason" name="reason" required>
+                </div>
+                <div class="c" style="float:right;">
+                <label for='reference'><b>Reference :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                    <input type="text" placeholder="reference" name="reference" required><br>  <br>
+                    <label for='reference no.'><b>Ref Contact No.</b></label>
+                    <input type="text" placeholder="reference no." name="reference_no" required><br>  <br>
+                    <label for='email'><b>Email ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                    <input type="email" placeholder="emailid" name="emailid" required><br>  <br>
+                    </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <div class="button"style="margin-left:400px;padding-top:300px;">
+                    <button type="submit" style="border-radius:20px;">Submit</button>
+                </div>
+            </div>
+            
+        </form>
+    
+    </body>
+</html>
