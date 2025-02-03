@@ -1,6 +1,19 @@
 from django.shortcuts import render,HttpResponse
 from .models import Employee1
 from employee.models import Employee1
+
+from django.shortcuts import render
+
+def index_view(request):
+    return render (request,'index.html')
+def about_view(request):
+    return render (request,'about.html')
+def service_view(request):
+    return render (request,'service.html')
+def team_view(request):
+        return render (request,'team.html')
+
+
 def index(request):
     return HttpResponse("this is home page")
 def about(request):
@@ -13,16 +26,16 @@ from django.shortcuts import render,HttpResponse
 
 # Create your views here.
 def index(request):
-    return render(request,'about.html')
+    return render(request,'index.html')
 def about(request):
-    return render(request,'services.html')
-
-def services(request):
     return render(request,'about.html')
+
+def service(request):
+    return render(request,'service.html')
 def show(request):
     return render(request,'show.html')
-def services(request):
-    return render(request,'about.html')
+def team(request):
+    return render(request,'team.html')
 def services(request):
     return render(request,'about.html')
     

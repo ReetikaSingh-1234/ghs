@@ -1,3 +1,5 @@
+{% csrf_token %}
+            {% load static %}
 <html>
     <head>
         <title>Signup Page</title>
@@ -57,7 +59,7 @@
 
         <center><h1 style="color:rgb(116, 191, 245);">Register From</h1></center>
         <div class="imgcontainer">
-            <img src="signup.png"  style="float:left; width:50%">
+            <img src="{% static 'assests/images/signup.png' %}"  style="float:left; width:50%">
         </div>
         <form action="#" method="post" style="float:right; margin-right:150px;">
             {% csrf_token %}

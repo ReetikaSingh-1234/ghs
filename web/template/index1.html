@@ -1,0 +1,198 @@
+{% csrf_token %}
+{% load static %}
+           
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - GLOBAL HUNT SOLUTION</title>
+  <style>
+    .logo{
+        height:65px;
+        width:auto;
+    }
+    .nav{ color:black;
+        background-color:white;
+    
+    }
+    .nav ul{
+        list-style-type: none;
+  margin: 0;
+  padding: 0;
+    }
+    .nav li { margin:10px 10px;
+        display:inline;
+        padding:10px;
+        float:left;
+
+    }
+    .nav li a:hover{
+        color:aqua;
+    }
+    .nav li a {
+        font-size:25px;
+        color:rgb(56, 20, 199);
+        text-decoration:none;
+    }
+   .nav{
+    order:1;
+   }
+   .btn{color:white;
+    border-radius:20px;
+    margin:15px 20px;
+    size:100px;
+    float:right;
+    font-size:20px;
+    padding:15px 32px;
+    background-color: rgb(11, 11, 143);
+   }
+   .home{
+    background-image: url("image1.png");
+   width:1500px;
+   height:1000px;
+   margin-top:110px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transition: 1s;
+   animation-name: animate;
+   animation-direction:alternate-reverse;
+   animation-duration: 5s;
+   animation-fill-mode: forwards;
+   animation-iteration-count:infinite;
+   animation-play-state:running;
+   animation-timing-function:ease-in-out;
+   background-position: center;
+   }
+   @keyframes animate{
+    0%{
+      background-image:url("image1.png");
+    }
+    20%
+    {
+      background-image:url("image2.png");
+    }
+    
+    40%{
+      background-image:url("image3.png");
+    }
+    60%{
+      background-image:url("image4.png");
+    }
+    80%{
+      background-image:url("image5.png");
+    }
+    100%{
+      background-image:url("image6.png");
+    }
+   }
+   .client img{
+    display:inline;
+   }
+   .clients {
+    padding: 12px 0;
+  }
+  
+  .clients .swiper {
+    padding: 10px 0;
+  }
+  
+  .clients .swiper-wrapper {
+    height: auto;
+  }
+  
+  .clients .swiper-slide img {
+    float: left;
+  
+  padding: 5px;
+    transition: 0.3s;
+    padding: 0 10px;
+  }
+  
+  .clients .swiper-slide img:hover {
+    transform: scale(1.1);
+  }
+
+  .client::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .img-fluid{
+    float: left;
+  
+  padding: 5px;
+    display:inline;
+  }
+  </style>
+</head>
+<body>
+   <header>
+    <div class>
+        <div class="sub_header" style="background-color:rgb(9, 9, 97); color:white;padding:10px">
+            <div class="sub _head ">
+                <marquee style="font-size:15px">Welcome to GHS Consultants India</marquee>
+            
+            </div>
+        </div>
+        <nav class="nav">
+            <ul><li>
+                    <a href="#">
+                    <img src="{% static 'assests/images/logo.png' %}" style="max-height:90px;">
+                    </a>
+                
+                    </li>
+                        <li>
+                            <a href="#" >Home</a>
+                        </li>
+                        <li>
+                            <a href="#" >About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" >Our Team</a>
+                        </li>
+                        <li class="services">
+                            <a href="#" >Our Services</a>
+                           
+                        </li>
+                        
+                        <li>
+                            <a href="#" >Clientele</a>
+                        </li>
+                        <li>
+                            <a href="#" >COntact Us</a>
+                        </li>
+                        <button class="btn">Career</button>
+                        <button class="btn">Employee login</button>
+                    </ul>
+                
+           
+        </nav>
+    </div>
+   </header> 
+   <div class="home" >
+   <div class="h1">
+    <h1></h1>
+   </div>
+   
+        
+    <section id="clients" class="clients section light-background">
+
+        <div class="container" data-aos="zoom-in">
+  
+          <div class="swiper init-swiper">
+    <div class="client" style="">
+      <marquee>
+        <div class="swiper-slide"> <img src="{% static 'assests/images/hdfc.png' %}" class="img-fluid" alt="" style="margin-top:800px;"></div>
+        <div class="swiper-slide"><img src="{% static 'assests/images/rupeek.png' %}" class="img-fluid" alt="" style="margin-top:800px;"></div>
+        <div class="swiper-slide"><img src="{% static 'assests/images/paytm.png' %}" class="img-fluid" alt="" style="margin-top:800px;margin-left:20px;"></div>
+        <div class="swiper-slide"><img src="{% static 'assests/images/mp.png' %}"class="img-fluid" alt="" style="margin-top:800px;margin-left:20px;"></div>
+        <div class="swiper-slide"><img src="{% static 'assests/images/Excitel.png' %}" class="img-fluid" alt="" style="margin-top:800px;margin-left:20px;"></div>
+        </marquee>
+      </div>
+      </div>
+      </div>
+      </section>
+ </div>
+</body>

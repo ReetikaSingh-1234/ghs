@@ -39,11 +39,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     'signup',
     'login',
     'employee',
     'adminsignup',
     'adminlogin',
+    'home','web',
+    'about',
+    'service',
+    'team',
+    
+   
     
     
 ]
@@ -63,7 +70,7 @@ ROOT_URLCONF = 'web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['template'],
+        'DIRS': ['template',os.path.join('C:/Users/DELL PC/Desktop/global/index.html')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -110,6 +117,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+DEBUG = True
+ALLOWED_HOSTS=[]
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
@@ -124,17 +133,32 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
+STATIC_URL = '/static/'
 
-STATIC_URL = 'static/'
-os.path.join(BASE_DIR, 'media')
+STATICFILES_DIRS = [
+ os.path.join(BASE_DIR, 'static'),
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#STATIC_URL = '/static/'
+#TATIC_ROOT = os.path.join(BASE_DIR, 'web/static')
+#os.path.join(BASE_DIR, 'media')
+#ASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #added manually
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
-STATICFILES_DIRS = [
-]
+#STATICFILES_DIRS = [
+    #os.path.join(BASE_DIR, 'static'),
+   #" C:/Users/DELL PC/Desktop/global/index.html"
+#]
+#STATICFILES_DIRS = [
+#]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
-MEDIA_ROOT =os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+#MEDIA_ROOT =os.path.join(BASE_DIR, 'media')
+#MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+

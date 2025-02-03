@@ -6,7 +6,7 @@
         <style>
             body{
                 font-family: Arial, Helvetica, sans-serif;
-                background-image: url('bg.png');
+               
                 background-size: 70%70%;
             }
             button{
@@ -53,14 +53,18 @@
             }  
         </style>
     </head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <body><br>
         <center><h1 style="color:rgb(141, 199, 241);font-size:60px;">Employee Login</h1></center>
         
-            <img src= "{% static 'login.png' %}" style="height: 500px;width:50%;margin-left:50px;" >
-        
-        <form action="#" method="post"style="float:right; margin-right:150px;padding:50px;">
+        {% csrf_token %}
+        {% load static %}
+        <form action="#" method="post"style="align:center; margin-right:800px;padding:50px;">
            
-            {% csrf_token %} 
+               
+        {% csrf_token %}
+        {% load static %}
             <div class="container">
                
                 <label for ='email'><b>UserEmail :  </b></label>
@@ -68,7 +72,10 @@
                 <label for='password'><b>Password :&nbsp; </b></label>
                 <input type="password" placeholder="Enter Password" name="password" required><br><br>
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <button type="submit" ><b>Login</b></button><br>    
+                <button type="submit" ><b>
+                    
+                    
+                    Login</b></button><br>    
                 <br>
                 
                 

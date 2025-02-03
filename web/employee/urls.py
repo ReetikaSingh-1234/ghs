@@ -7,6 +7,8 @@ from django.conf.urls.static import static
 from employee import views
 from adminsignup.views import sign
 from adminlogin.views import login
+from .views import index_view
+
 
 urlpatterns = [
     path("",views.index,name="home"),
@@ -17,7 +19,9 @@ urlpatterns = [
     path("adminlogin",login),
     path('signup/',signaction),
     path('login/',loginaction),
-    path('show', views.show)
+    path('show', views.show),
+    path("",index_view,name='index'),
+    
     
      
    

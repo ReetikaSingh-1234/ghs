@@ -22,7 +22,10 @@ from employee.views import employee
 from employee import views
 from adminsignup.views import sign
 from adminlogin.views import login
-
+from employee.views import index_view
+from employee.views import about_view
+from employee.views import service_view
+from employee.views import team_view
 
 
 from django.conf import settings
@@ -37,12 +40,19 @@ urlpatterns = [
     path('show',views.show,name='show'),
     path('adminsignup/',sign),
    path('adminlogin/',login),
-    
+  
+    path("index",index_view,name='index'),
+    path("about",about_view,name='about'),
+    path("service",service_view,name='service'),
+    path("team",team_view,name='team'),
     
     
        
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+
+if settings.DEBUG:
+    urlpatterns +=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 
 
 if settings.DEBUG:

@@ -1,0 +1,404 @@
+{% csrf_token %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="{% static 'assests/images/favicon.png' %}" type="">
+
+  <title> Finexo </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'assests/css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="{% static 'assests/https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap' %}" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{% static 'assests/https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' %}" />
+
+  <!-- font awesome style -->
+  <link href="{% static 'assests/css/font-awesome.min.css' %}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'assests/css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'assests/css/responsive.css' %}" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header>
+    <div class>
+        <div class="sub_header" style="background-color:rgb(9, 9, 97); color:white;padding:10px">
+            <div class="sub _head ">
+                <marquee style="font-size:15px">Global Hunt Solutions Always for Hire ,24/7</marquee>
+            
+            </div>
+        </div>
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="{% static 'assests/images/hero-bg.png' %}" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              <a href="#">
+                <img src="{% static 'assests/images/logo.png' %}" style="max-height:90px;">
+                </a>
+                <h1 class="sitename" style="font-size:30px; color:rgb(116, 191, 245)"><strong>GLOBAL HUNT SOLUTIONS</strong></h1>
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="http://localhost:8000/index">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/about"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/service">Services</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/signup/"> <i class="fa fa-user" aria-hidden="true"></i> Employee signup</a>
+              </li>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    
+                    
+                     
+<!-- slider section -->
+<section class="slider_section ">
+  <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" >
+      <div class="carousel-item active" >
+        <div class="container " >
+          <div class="row">
+            <div class="col-md-6 ">
+              <div class="detail-box">
+                
+                <p style="font-size:35px;">
+                 Welcome to Global Hunt Solutions, Your  reliable hiring partner. 
+                </p>
+                <div class="btn-box">
+                  <a href="" class="btn1">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="img-box">
+                <img src="{% static 'assests/images/hero-img.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-6 ">
+              <div class="detail-box">
+                
+                <p style="font-size:35px;">
+                  Trusted by 100+ Clients,we pride ourselves on reliability and commitment to excellence.
+                </p>
+                <div class="btn-box">
+                  <a href="" class="btn1">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="img-box">
+                <img src="{% static 'assests/images/image.png' %}"  style="max-height:560px;"alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-6 ">
+              <div class="detail-box">
+                
+                <p style="font-size:25px;">
+                  We ensure that you have access to top-tier talent,whether you're a startup ou an established enterprise. our holistic approach to staffing contributes to your success,providing you with the right resources to achieve your business goals. 
+
+                </p>
+                <div class="btn-box">
+                  <a href="" class="btn1">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="img-box">
+                <img src="{% static 'assests/images/img2.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ol class="carousel-indicators">
+      <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#customCarousel1" data-slide-to="1"></li>
+      <li data-target="#customCarousel1" data-slide-to="2"></li>
+    </ol>
+  </div>
+
+  <div class="swiper-wrapper align-items-center">
+    <div class="swiper-slide"><img src="assets/img/hdfc/hdfc.png" class="img-fluid" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/rupeek.png" class="img-fluid" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/paytm.png" class="img-fluid" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/mp.png" class="img-fluid" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/Excitel.png" class="img-fluid" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/hdfc/hdfc.png" class="img-fluid" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/rupeek.png" class="img-fluid" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/paytm.png" class="img-fluid" alt=""></div>
+  </div>
+</section>
+<!-- end slider section -->
+</div>
+
+  
+                
+               <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            Our <span>Services</span>
+          </h2>
+         
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'assests/images/s1.png' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h4 style="font--size:30px;">
+                  Permanent Staffing
+                </h4>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'assests/images/s2.png' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h4 style="font--size:30px;">
+                  Website and MObile Application Development
+                </h4>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'assests/images/s3.png' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h4 style="font--size:30px;">
+                 Payroll Management
+              </h4>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a href="">
+            View All
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+
+  
+      
+            
+
+ <!-- info section -->
+
+ <section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 info_col">
+        <div class="info_contact">
+          <h4>
+            Address
+          </h4>
+          <div class="contact_link_box">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location:-Noida
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call +01 1234567890
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+               connect@globhunt.in
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="info_social">
+          
+          
+          <a href="">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-2 mx-auto info_col">
+        <div class="info_link_box">
+          <h4>
+           Our Services
+          </h4>
+          <div class="info_links">
+            <a class="active" href="index.html">
+              Permanent Staffing
+            </a>
+            <a class="" href="about.html">
+              
+              Website and Mobile Application Development
+            </a>
+            <a class="" href="service.html">
+              Graphics Designing
+            </a>
+            <a class="" href="why.html">
+             Payroll Management
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      
+    
+
+      <div class="col-md-6 col-lg-2 mx-auto info_col">
+        <div class="info_link_box">
+          <h4>
+            Links
+          </h4>
+          <div class="info_links">
+            <a class="active" href="index.html">
+              Home
+            </a>
+            <a class="" href="about.html">
+              About
+            </a>
+            <a class="" href="service.html">
+              Services
+            </a>
+            <a class="" href="why.html">
+              Why Us
+            </a>
+            <a class="" href="team.html">
+              Team
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- end info section -->
+
+<!-- footer section -->
+<section class="footer_section">
+  <div class="container">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved By
+      <a href="{% static 'assests/https://html.design/' %}">Reetika Singh</a>
+    </p>
+  </div>
+</section>
+<!-- footer section -->
+
+<!-- jQery -->
+<script type="text/javascript" src="{% static 'assests/js/jquery-3.4.1.min.js' %}"></script>
+<!-- popper js -->
+<script src="{% static 'assests/https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' %}" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<!-- bootstrap js -->
+<script type="text/javascript" src="{% static 'assests/js/bootstrap.js' %}"></script>
+<!-- owl slider -->
+<script type="text/javascript" src="{% static 'assests/https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %}">
+</script>
+<!-- custom js -->
+<script type="text/javascript" src="{% static 'assests/js/custom.js' %}"></script>
+<!-- Google Map -->
+<script src="{% static 'assests/https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+</script>
+<!-- End Google Map -->
+
+</body>
+
+</html>

@@ -3,8 +3,12 @@ from datetime import datetime
 from employee.models import Employee1
 # Create your views here.
 
+def index(request):
+
+    return render(request,'index.html')
 
 
+def home()
 
 def employee(request):
     if request.method=="POST":
@@ -20,5 +24,6 @@ def employee(request):
         Employee1.save()
         
         
+    
     
     return render(request,'employee.html')
